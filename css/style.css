@@ -275,3 +275,56 @@ textarea {
   }
 }
 
+@media (max-width: 768px) {
+  /* Stack nav items vertically */
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  /* Optional: Adjust padding for smaller screens */
+  .navbar {
+    padding: 15px;
+    text-align: center;
+  }
+
+  /* Example hero section responsiveness (optional tweak) */
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-section img {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .hero-buttons button {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* These styles ONLY apply on mobile screens */
+  .mobile-nav-fix {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+}
